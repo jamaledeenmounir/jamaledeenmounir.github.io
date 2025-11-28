@@ -94,7 +94,7 @@ h2{
 }
 
 a.btn{
-  background:#25D366;
+  background:#0a2540;
   color:white;
   padding:15px 25px;
   border-radius:6px;
@@ -105,7 +105,7 @@ a.btn{
 }
 
 a.btn:hover{
-  background:#1ebe5b;
+  background:#0a2540;
 }
 
 footer{
@@ -172,6 +172,33 @@ a.btn:hover {
 .lang-en, .lang-ar {
   transition: opacity 0.4s ease;
 }
+/* MOBILE EFFECTS */
+@media (max-width: 768px){
+
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .service-item:hover {
+    transform: none;
+  }
+
+  .gallery img:hover {
+    transform: none;
+  }
+
+  a.btn:active {
+    transform: scale(0.95);
+    background:#334155;
+  }
+
+  .language-switch {
+    font-size:14px;
+    padding:4px 10px;
+  }
+}
+
 
 </style>
 </head>
