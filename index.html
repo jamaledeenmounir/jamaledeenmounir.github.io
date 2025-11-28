@@ -1,11 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dr. Mounir</title>
+<meta charset="UTF-8">
+<title>Dr. Mounir | Physical Therapy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:#f4f8fb;
+}
+
+header{
+  background:linear-gradient(to right,#0c4a6e,#0284c7);
+  color:white;
+  text-align:center;
+  padding:40px;
+  animation: fadeDown 1s ease;
+}
+
+.profile{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid white;
+}
+
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:8px;
+  margin-bottom:25px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  animation: fadeUp 1s ease;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+button,a.btn{
+  background:#25D366;
+  color:white;
+  border:none;
+  padding:15px 25px;
+  font-size:16px;
+  border-radius:5px;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:10px;
+}
+
+button:hover,.btn:hover{
+  background:#1EBE57;
+}
+
+footer{
+  text-align:center;
+  padding:15px;
+  background:#0c4a6e;
+  color:white;
+}
+
+@keyframes fadeUp{
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeDown{
+  from {opacity:0; transform:translateY(-20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+</style>
 </head>
+
 <body>
-  <h1>Dr. Mounir</h1>
-  <p>Doctor of Physical Therapy Student</p>
-  <p>Certified in Dry Needling & Hijama Therapy</p>
+
+<header>
+<img src="profile.jpg" class="profile">
+<h1>Dr. Mounir</h1>
+<p>DPT Candidate | Physical Therapist</p>
+<p>Dry Needling • Hijama Therapy</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>About Me</h2>
+<p>
+I am a Doctor of Physical Therapy (DPT) candidate and fresh graduate Physical Therapist,
+specialized in pain management, sports rehabilitation and modern physiotherapy techniques.
+</p>
+</div>
+
+<div class="card">
+<h2>Services</h2>
+<div class="services">
+<div>✅ Sports Rehabilitation</div>
+<div>✅ Orthopedic Therapy</div>
+<div>✅ Dry Needling</div>
+<div>✅ Hijama Therapy</div>
+<div>✅ Pain Management</div>
+<div>✅ Home Visits for Treatment</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Book Appointment</h2>
+<p>Click to book directly via WhatsApp</p>
+<a class="btn" target="_blank"
+href="https://wa.me/96181812850?text=Hello%20Dr.%20Mounir%2C%20I%20would%20like%20to%20book%20an%20appointment%20(at%20home%20if%20available)">
+📅 Book on WhatsApp
+</a>
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>📞 Phone: <a href="tel:+96181812850">81 812 850</a></p>
+<p>📷 Instagram: <a href="https://instagram.com/jdmounir" target="_blank">@jdmounir</a></p>
+</div>
+
+<div class="card" dir="rtl">
+<h2>من أنا</h2>
+<p>
+طالب دكتور علاج فيزيائي وخريج حديث، أقدم جلسات علاج فيزيائي، علاج بالإبر الجافة،
+والحجامة باستخدام أحدث الطرق العلمية.
+</p>
+
+<h2>الخدمات</h2>
+<p>
+✅ علاج رياضي<br>
+✅ علاج إصابات العظام<br>
+✅ الإبر الجافة<br>
+✅ الحجامة<br>
+✅ علاج الآلام<br>
+✅ زيارات منزلية للعلاج
+</p>
+
+<h2>حجز موعد</h2>
+<a class="btn" target="_blank"
+href="https://wa.me/96181812850?text=مرحبا%20دكتور%20منير،%20أود%20حجز%20موعد">
+📅 احجز عبر واتساب
+</a>
+</div>
+
+</section>
+
+<footer>
+&copy; 2025 Dr. Mounir Physical Therapy
+</footer>
+
 </body>
 </html>
