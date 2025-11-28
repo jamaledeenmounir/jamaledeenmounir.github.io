@@ -104,10 +104,6 @@ a.btn{
   font-size:17px;
 }
 
-a.btn:hover{
-  background:#273577;
-}
-
 footer{
   background:#0a2540;
   color:white;
@@ -131,76 +127,51 @@ footer{
   from{opacity:0; transform:translateY(-20px);}
   to{opacity:1; transform:translateY(0);}
 }
-/* Hover Animations */
 
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* HOVER ANIMATIONS (DESKTOP) */
+.card{ transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card:hover{ transform: translateY(-6px); box-shadow:0 12px 20px rgba(0,0,0,0.12); }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.12);
-}
+.service-item{ transition: transform 0.3s ease, color 0.3s ease; }
+.service-item:hover{ transform: translateX(6px); color:#0a2540; }
 
-.service-item {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+.gallery img{ transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.gallery img:hover{ transform:scale(1.05); box-shadow:0 8px 16px rgba(0,0,0,0.15); }
 
-.service-item:hover {
-  transform: translateX(6px);
-  color: #0a2540;
-}
-
-.gallery img {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
-
-a.btn {
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-a.btn:hover {
-  transform: scale(1.05);
-}
+a.btn{ transition: background 0.3s ease, transform 0.2s ease; }
+a.btn:hover{ transform:scale(1.05); }
 
 /* Smooth language change */
-.lang-en, .lang-ar {
-  transition: opacity 0.4s ease;
-}
+.lang-en, .lang-ar{ transition: opacity 0.4s ease; }
+
 /* MOBILE EFFECTS */
 @media (max-width: 768px){
 
-  .card:hover {
-    transform: none;
-    box-shadow: none;
-  }
+  /* Disable hover on touch */
+  .card:hover{ transform:none; box-shadow:none; }
+  .service-item:hover{ transform:none; }
+  .gallery img:hover{ transform:none; }
 
-  .service-item:hover {
-    transform: none;
-  }
+  /* Tap feedback */
+  .card{ transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .card:active{ transform:scale(0.97); box-shadow:0 4px 8px rgba(0,0,0,0.15); }
 
-  .gallery img:hover {
-    transform: none;
-  }
+  .service-item:active{ color:#0a2540; font-weight:bold; }
+  .gallery img:active{ transform:scale(0.95); }
 
-  a.btn:active {
-    transform: scale(0.95);
+  a.btn:active{
+    transform:scale(0.95);
     background:#334155;
+    opacity:0.85;
   }
 
-  .language-switch {
+  .language-switch{
     font-size:14px;
     padding:4px 10px;
   }
 }
-
-
 </style>
+
 </head>
 
 <body>
