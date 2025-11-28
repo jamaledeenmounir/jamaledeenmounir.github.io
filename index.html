@@ -310,15 +310,12 @@ href="https://wa.me/96181812850?text=Hello%20Dr.%20Mounir%2C%20I%20would%20like%
 
 <div class="gallery">
 
-  <img src="dryneedling.png" alt="Dry Needling Certificate">
+  <img src="dryneedling.png" onclick="openPopup(this.src)" style="cursor:zoom-in;">
+<img src="houjama.jpg" onclick="openPopup(this.src)" style="cursor:zoom-in;">
+<img src="sportshealthandperformance.jpg" onclick="openPopup(this.src)" style="cursor:zoom-in;">
+<img src="sportsmedecine.jpg" onclick="openPopup(this.src)" style="cursor:zoom-in;">
 
-  <img src="houjama.jpg" alt="Hijama Certificate">
-
-  <img src="sportshealthandperformance.jpg" alt="Sports Health & Performance">
-
-  <img src="sportsmedecine.jpg" alt="Sports Medicine Certificate">
-
-
+</div>
 </div>
 
 <div class="card">
@@ -372,17 +369,10 @@ href="https://wa.me/96181812850?text=مرحبا%20دكتور%20منير%2C%20أ�
 <div class="card">
 <h2>الشهادات</h2>
 
-<div class="gallery">
-
-  <img src="dryneedling.png" alt="شهادة الإبر الجافة">
-
-  <img src="houjama.jpg" alt="شهادة الحجامة">
-
-  <img src="sportshealthandperformance.jpg" alt="شهادة الصحة والأداء الرياضي">
-
-  <img src="sportsmedecine.jpg" alt="شهادة الطب الرياضي">
-
-</div>
+<img src="dryneedling.png" onclick="openPopup(this.src)" style="cursor:zoom-in;">
+<img src="houjama.jpg" onclick="openPopup(this.src)" style="cursor:zoom-in;">
+<img src="sportshealthandperformance.jpg" onclick="openPopup(this.src)" style="cursor:zoom-in;">
+<img src="sportsmedecine.jpg" onclick="openPopup(this.src)" style="cursor:zoom-in;">
 
 <p style="margin-top:10px;color:#555;">
 اضغط على الصورة لتكبيرها
@@ -437,6 +427,29 @@ document.addEventListener('click', function (e) {
     ripple.remove();
   }, 600);
 });
+</script>
+<!-- FULLSCREEN IMAGE VIEWER -->
+
+<div id="popup" onclick="closePopup()" 
+     style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); 
+     z-index:10000; justify-content:center; align-items:center;">
+
+  <img id="popup-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+
+  <span onclick="closePopup()" 
+    style="position:absolute; top:20px; right:25px; font-size:35px; color:white; cursor:pointer;">
+    ✕
+  </span>
+</div>
+<script>
+function openPopup(img){
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-img").src = img;
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display = "none";
+}
 </script>
 
 </body>
